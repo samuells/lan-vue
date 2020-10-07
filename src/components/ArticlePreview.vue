@@ -1,19 +1,19 @@
 <template>
 	<article>
-		<img :src="src" />
-		<h2>
+		<img class="mx-auto" :src="src" />
+		<h2 class="text-3xl">
 			<a href="#">
 				<slot name="headline" />
 			</a>
 		</h2>
-		<p><slot /></p>
-		<BaseButton>Read More</BaseButton>
+		<p class="mt-3"><slot /></p>
+		<BaseButton class="mt-5">Read More</BaseButton>
 	</article>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import BaseButton from "./BaseButton.vue";
+import BaseButton from "@/components/BaseButton.vue";
 
 export default defineComponent({
 	name: "ArticlePreview",
@@ -32,5 +32,9 @@ export default defineComponent({
 <style scoped lang="scss">
 article {
 	color: #ffffff;
+}
+
+p {
+	text-align: left;
 }
 </style>

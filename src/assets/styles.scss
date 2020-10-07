@@ -1,8 +1,23 @@
+@use 'variables' as *;
+// import of tailwind styles
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: rgba(8, 3, 37, 0.9);
+}
+
 a {
+	cursor: pointer;
 	color: #ffffff;
 	transition: 0.3s color ease;
 
 	&:hover {
-		color: #d92b4c;
+		color: $primary-pink;
 	}
 }
