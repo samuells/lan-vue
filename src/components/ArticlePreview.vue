@@ -1,5 +1,5 @@
 <template>
-	<article>
+	<article class="md:max-w-4xl md:mx-auto">
 		<img class="mx-auto" :src="src" />
 		<h2 class="text-3xl">
 			<a href="#">
