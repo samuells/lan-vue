@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"bradlc.vscode-tailwindcss",
+		"dbaeumer.jshint",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"EditorConfig.EditorConfig",
+		"esbenp.prettier-vscode",
+		"octref.vetur",
+		"sdras.vue-vscode-snippets",
+		"stylelint.vscode-stylelint"
+	]
+}
