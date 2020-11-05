@@ -1,6 +1,6 @@
 <template>
 	<nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
-		<div class="flex items-center flex-shrink-0 text-white mr-6">
+		<router-link to="/" class="flex items-center flex-shrink-0 text-white mr-6">
 			<svg
 				class="fill-current h-8 w-8 mr-2"
 				width="54"
@@ -13,7 +13,7 @@
 				/>
 			</svg>
 			<span class="font-semibold text-xl tracking-tight">LAN</span>
-		</div>
+		</router-link>
 		<div class="block lg:hidden">
 			<button
 				class="flex items-center px-3 py-2 border rounded text-gray-400 border-gray-400 hover:text-white hover:border-white"
@@ -34,24 +34,18 @@
 			:class="{ hidden: !isOpen }"
 		>
 			<div class="text-sm lg:flex-grow">
-				<a
-					href="#responsive-header"
+				<router-link
+					to="/"
 					class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
 				>
-					Docs
-				</a>
-				<a
-					href="#responsive-header"
+					Home
+				</router-link>
+				<router-link
+					to="/login"
 					class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
 				>
-					Examples
-				</a>
-				<a
-					href="#responsive-header"
-					class="block mt-4 lg:inline-block lg:mt-0 text-white"
-				>
-					Blog
-				</a>
+					Login
+				</router-link>
 			</div>
 		</div>
 	</nav>

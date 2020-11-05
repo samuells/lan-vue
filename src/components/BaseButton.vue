@@ -18,26 +18,12 @@ export default defineComponent({
 button {
 	position: relative;
 	padding: 10px 30px;
-	margin-right: 10px;
-	margin-left: 10px;
-	z-index: 1;
 	color: #fff;
-	text-decoration: none;
-	background: 0 0;
 	border: none;
 	outline: 0;
 	box-shadow: none;
-	display: inline-block;
-	margin-bottom: 0;
-	font-weight: 400;
 	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
 	cursor: pointer;
-	font-size: 14px;
-	line-height: 1.5;
-	border-radius: 4px;
-	user-select: none;
 	transition: 0.3s color ease;
 
 	&::before {

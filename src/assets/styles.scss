@@ -10,11 +10,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: rgba(8, 3, 37, 0.9);
+	color: #ffffff;
 }
 
 a {
 	cursor: pointer;
-	color: #ffffff;
 	transition: 0.3s color ease;
 
 	&:hover {
