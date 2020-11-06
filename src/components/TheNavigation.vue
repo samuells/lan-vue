@@ -37,12 +37,14 @@
 				<router-link
 					to="/"
 					class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
+					@click="closeMenu()"
 				>
 					Home
 				</router-link>
 				<router-link
 					to="/login"
 					class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
+					@click="closeMenu()"
 				>
 					Login
 				</router-link>
@@ -64,6 +66,9 @@ export default defineComponent({
 	methods: {
 		toggleMenu() {
 			this.isOpen = !this.isOpen;
+		},
+		closeMenu() {
+			this.isOpen = false;
 		},
 	},
 });

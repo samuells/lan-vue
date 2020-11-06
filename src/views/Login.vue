@@ -29,6 +29,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 form {
-	background-color: rgba(8, 3, 37, 0.8);
+	background-color: rgba(8, 3, 37);
 }
 </style>

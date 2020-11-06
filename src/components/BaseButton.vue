@@ -25,6 +25,7 @@ button {
 	text-align: center;
 	cursor: pointer;
 	transition: 0.3s color ease;
+	z-index: 10;
 
 	&::before {
 		content: "";
