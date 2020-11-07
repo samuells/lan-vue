@@ -1,39 +1,30 @@
 <template>
-	<h1 v-if="content">{{ content?.title }}</h1>
-	<ArticlePreview
-		v-for="index in articles"
-		:key="index"
-		:src="logo"
-		class="p-8"
+	<h1
+		v-if="content"
+		class="text-4xl text-center my-5 border-gray-700 border-solid border-b-2"
 	>
-		<template #headline>Headline</template>
-		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quidem minus
-		accusantium mollitia quos iusto quo? Distinctio vel officiis ab accusamus in
-		nemo ut voluptatibus nihil laborum. Placeat, nesciunt doloribus.
-	</ArticlePreview>
+		{{ content?.title }}
+	</h1>
+	<main v-if="content">
+		<div v-editable="content">
+			<template v-for="item in content.body" :key="item._uid">
+				<component :is="item.component" :blok="item"></component>
+			</template>
+		</div>
+	</main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ArticlePreview from '@/components/ArticlePreview.vue';
 import api from '@/utils/api';
-import { HomeContent } from '@/interface/content/home';
+import { HomeContent } from '@/interface/content/Home';
 
 export default defineComponent({
 	name: 'Home',
-	components: {
-		ArticlePreview,
-	},
 	data() {
 		return {
-			articles: 5,
 			content: null as null | HomeContent,
 		};
-	},
-	computed: {
-		logo(): string {
-			return require('@/assets/logo.png');
-		},
 	},
 	created() {
 		this.fetchData();
@@ -58,7 +49,6 @@ export default defineComponent({
 		async fetchData() {
 			const { data } = await api.get('cdn/stories/home');
 			this.content = data.story.content;
-			console.log(this.content);
 		},
 	},
 });
