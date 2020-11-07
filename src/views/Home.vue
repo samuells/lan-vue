@@ -13,11 +13,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import ArticlePreview from "@/components/ArticlePreview.vue";
+import { defineComponent } from 'vue';
+import ArticlePreview from '@/components/ArticlePreview.vue';
 
 export default defineComponent({
-	name: "Home",
+	name: 'Home',
 	components: {
 		ArticlePreview,
 	},
@@ -28,7 +28,7 @@ export default defineComponent({
 	},
 	computed: {
 		logo(): string {
-			return require("@/assets/logo.png");
+			return require('@/assets/logo.png');
 		},
 	},
 });

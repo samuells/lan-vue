@@ -12,11 +12,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import BaseButton from "@/components/BaseButton.vue";
+import { defineComponent } from 'vue';
+import BaseButton from '@/components/BaseButton.vue';
 
 export default defineComponent({
-	name: "ArticlePreview",
+	name: 'ArticlePreview',
 	components: {
 		BaseButton,
 	},
@@ -24,6 +24,11 @@ export default defineComponent({
 		src: {
 			type: String,
 			required: true,
+		},
+	},
+	methods: {
+		onClickMethod() {
+			console.log('clicked');
 		},
 	},
 });

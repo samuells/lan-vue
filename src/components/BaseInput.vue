@@ -14,10 +14,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-	name: "BaseInput",
+	name: 'BaseInput',
 	props: {
 		placeholder: {
 			type: String,
@@ -25,7 +25,7 @@ export default defineComponent({
 		},
 		type: {
 			type: String,
-			default: "text",
+			default: 'text',
 		},
 	},
 	data() {
@@ -56,7 +56,7 @@ input {
 
 div {
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		right: 0;
