@@ -5,10 +5,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-	name: "BaseButton",
+	name: 'BaseButton',
 });
 </script>
 
@@ -28,7 +28,7 @@ button {
 	z-index: 10;
 
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 		right: 0;

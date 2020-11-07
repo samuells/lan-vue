@@ -14,12 +14,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import BaseInput from "@/components/BaseInput.vue";
-import BaseButton from "@/components/BaseButton.vue";
+import { defineComponent } from 'vue';
+import BaseInput from '@/components/BaseInput.vue';
+import BaseButton from '@/components/BaseButton.vue';
 
 export default defineComponent({
-	name: "Login",
+	name: 'Login',
 	components: {
 		BaseInput,
 		BaseButton,

@@ -5,11 +5,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import TheNavigation from "@/components/TheNavigation.vue";
+import { defineComponent } from 'vue';
+import TheNavigation from '@/components/TheNavigation.vue';
 
 export default defineComponent({
-	name: "TheHeader",
+	name: 'TheHeader',
 	components: {
 		TheNavigation,
 	},
