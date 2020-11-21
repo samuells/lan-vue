@@ -48,6 +48,13 @@
 				>
 					Login
 				</router-link>
+				<router-link
+					to="/countdown"
+					class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4"
+					@click="closeMenu()"
+				>
+					Countdown
+				</router-link>
 			</div>
 		</div>
 	</nav>

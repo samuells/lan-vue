@@ -7,6 +7,7 @@ import Home from '@/views/Home.vue';
 // which is lazy-loaded when the route is visited.
 const Login = () => import('@/views/Login.vue');
 const Test = () => import('@/views/Test.vue');
+const Countdown = () => import('@/views/Countdown.vue');
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -23,6 +24,11 @@ const routes: Array<RouteRecordRaw> = [
 		path: '/test',
 		name: 'Test',
 		component: Test,
+	},
+	{
+		path: '/countdown',
+		name: 'Countdown',
+		component: Countdown,
 	},
 ];
 
