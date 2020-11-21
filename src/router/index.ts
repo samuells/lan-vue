@@ -6,6 +6,7 @@ import Home from '@/views/Home.vue';
 // this generates a separate chunk (login.[hash].js) for this route
 // which is lazy-loaded when the route is visited.
 const Login = () => import('@/views/Login.vue');
+const Test = () => import('@/views/Test.vue');
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -17,6 +18,11 @@ const routes: Array<RouteRecordRaw> = [
 		path: '/login',
 		name: 'Login',
 		component: Login,
+	},
+	{
+		path: '/test',
+		name: 'Test',
+		component: Test,
 	},
 ];
 
